@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Integrated Eligibility Case Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6fa;
+      color: #333;
+    }
+    header {
+      background-color: #2e5aac;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header input {
+      padding: 0.4rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      border: none;
+    }
+    .container {
+      display: flex;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #eaeef4;
+      padding: 1rem;
+      height: calc(100vh - 64px);
+    }
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .main {
+      flex-grow: 1;
+      padding: 2rem;
+      background-color: white;
+    }
+    .card {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+    }
+    .actions button {
+      margin: 0.4rem 0.6rem 0.4rem 0;
+      padding: 0.6rem 1rem;
+      background-color: #2e5aac;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .smart-assistant {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #eef3fd;
+      border-left: 4px solid #2e5aac;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Integrated Eligibility Case Management System</h1>
+  <input type="text" placeholder="Search by Case ID, Name, SSN">
+</header>
+
+<div class="container">
+  <nav class="sidebar">
+    <a href="#">🏠 Home</a>
+    <a href="#">📁 All Cases</a>
+    <a href="#">🧾 Applications</a>
+    <a href="#">✅ Eligibility Results</a>
+    <a href="#">📋 Verifications</a>
+    <a href="#">🗓 Interviews</a>
+    <a href="#">💵 Benefits & Payments</a>
+    <a href="#">👨‍👩‍👧 Household Members</a>
+    <a href="#">📨 Notices</a>
+  </nav>
+
+  <main class="main">
+    <div class="card">
+      <h2>Case Summary</h2>
+      <p><strong>Case ID:</strong> 2025-4815-SN-MC</p>
+      <p><strong>Primary Applicant:</strong> Sarah Williams</p>
+      <p><strong>Programs Applied:</strong> SNAP, Medicaid</p>
+      <p><strong>Status:</strong> Active</p>
+      <p><strong>Last Updated:</strong> July 17, 2025</p>
+      <p><strong>Caseworker:</strong> Lisa Johnson</p>
+    </div>
+
+    <div class="card">
+      <h2>Household Information</h2>
+      <table>
+        <tr>
+          <th>Name</th><th>Age</th><th>Role</th><th>Relationship</th><th>Program Eligibility</th>
+        </tr>
+        <tr>
+          <td>Sarah Williams</td><td>29</td><td>Applicant</td><td>Self</td><td>SNAP ✅, Medicaid ✅</td>
+        </tr>
+        <tr>
+          <td>Emma Williams</td><td>2</td><td>Dependent</td><td>Daughter</td><td>Medicaid ✅</td>
+        </tr>
+        <tr>
+          <td>Noah Williams</td><td>4</td><td>Dependent</td><td>Son</td><td>SNAP ✅, Medicaid ✅</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Eligibility Summary</h2>
+      <table>
+        <tr>
+          <th>Program</th><th>Eligibility</th><th>Start Date</th><th>Next Review</th><th>Benefit Amount</th>
+        </tr>
+        <tr>
+          <td>SNAP</td><td>Eligible</td><td>07/15/2025</td><td>01/15/2026</td><td>$535 / mo</td>
+        </tr>
+        <tr>
+          <td>Medicaid</td><td>Eligible</td><td>07/15/2025</td><td>07/15/2026</td><td>Full Coverage</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="card actions">
+      <h2>Case Actions</h2>
+      <button>📆 Schedule Interview</button>
+      <button>📝 Add Note to Case</button>
+      <button>📁 Upload Document</button>
+      <button>🔔 Generate Notice</button>
+      <button>🔍 Run Eligibility Check</button>
+      <button>💾 Save / Submit</button>
+    </div>
+
+    <div class="smart-assistant">
+      💬 Hi Lisa, based on the current data, this case is due for SNAP recertification in 5 months. Would you like to schedule a reminder?
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
